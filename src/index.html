@@ -1,14 +1,45 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Theki</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
+
+<style>
+  /* body {
+    margin: 0px !important;
+  } */
+</style>
+
+
+<script>
+  window.onscroll = function() {
+    var el = document.getElementsByClassName('header')[0];
+    var className = 'small';
+    console.log('This is fired');
+    if (el.classList) {
+      if (window.scrollY > 10){
+        el.classList.add(className);
+        console.log('small class added');
+      }
+        
+      else
+        el.classList.remove(className);
+    }
+  };
+  </script>
